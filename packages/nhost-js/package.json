@@ -33,11 +33,12 @@
     "./package.json": "./package.json",
     ".": {
       "import": {
-        "node": "./dist/index.cjs.js",
-        "default": "./dist/index.esm.js"
+        "default": "./dist/index.esm.js",
+        "node": "./dist/index.cjs.js"
       },
       "require": "./dist/index.cjs.js"
-    }
+    },
+    "./dist/*": "./dist/*"
   },
   "publishConfig": {
     "access": "public"

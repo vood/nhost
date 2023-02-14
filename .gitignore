@@ -20,6 +20,7 @@ coverage/
 dist/
 umd/
 lib/
+!**/src/**/lib
 node_modules/
 tmp/
 .docz/
