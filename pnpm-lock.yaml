@@ -574,6 +574,12 @@ importers:
       ws: 8.9.0
       xstate: 4.33.6
 
+  examples/node:
+    specifiers:
+      '@nhost/nhost-js': workspace:^1.13.2
+    dependencies:
+      '@nhost/nhost-js': link:../../packages/nhost-js
+
   examples/react-apollo:
     specifiers:
       '@apollo/client': ^3.6.9
