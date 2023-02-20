@@ -101,7 +101,7 @@ describe('Hasura', () => {
       client.query.todos({
         select: { id: true, unexistingProperty: true }
       })
-    ).rejects.toThrowErrorMatchingInlineSnapshot('"Field unexistingProperty is not defined"')
+    ).rejects.toThrowErrorMatchingInlineSnapshot('"Field unexistingProperty does not exist in the schema"')
   })
 
   it('should work with a nested wildcard', async () => {

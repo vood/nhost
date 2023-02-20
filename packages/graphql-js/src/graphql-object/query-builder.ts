@@ -78,7 +78,7 @@ const toJson = (
       const childVariablePrefix = variablesPrefix ? `${variablesPrefix}_${key}` : key
       const fieldType = getFieldType(schema, key, definition)
       if (!fieldType) {
-        throw new Error(`Field ${key} is not defined`)
+        throw new Error(`Field ${key} does not exist in the schema`)
       }
       const {
         query,
