@@ -1,14 +1,9 @@
-import { useWorkspaceContext } from '@/context/workspace-context';
-import { useUserDataContext } from '@/context/workspace1-context';
 import Button from '@/ui/v2/Button';
 import Text from '@/ui/v2/Text';
 import { darken } from '@mui/system';
 import Link from 'next/link';
 
 export function NoApplications() {
-  const { userContext } = useUserDataContext();
-  const { workspaceContext } = useWorkspaceContext();
-
   return (
     <div className="noapps mt-4 h-80 rounded-md text-center font-display font-normal">
       <div className="pt-12">
@@ -33,9 +28,6 @@ export function NoApplications() {
                     `${darken(theme.palette.common.white, 0.1)} !important`,
                 },
               }}
-              disabled={
-                !workspaceContext.id && userContext.workspaces.length === 0
-              }
             >
               Create Your First Project
             </Button>

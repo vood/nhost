@@ -78,10 +78,10 @@ export function NewProjectPageContent({
   const [passwordError, setPasswordError] = useState('');
 
   const [selectedWorkspace, setSelectedWorkspace] = useState({
-    id: preSelectedWorkspace.id,
-    name: preSelectedWorkspace.name,
+    id: preSelectedWorkspace?.id,
+    name: preSelectedWorkspace?.name,
     disabled: false,
-    slug: preSelectedWorkspace.slug,
+    slug: preSelectedWorkspace?.slug,
   });
 
   const [selectedRegion, setSelectedRegion] = useState({
