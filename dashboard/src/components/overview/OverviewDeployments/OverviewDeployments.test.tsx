@@ -1,6 +1,5 @@
-import type { Project } from '@/types/application';
+import type { Project, Workspace } from '@/types/application';
 import { ApplicationStatus } from '@/types/application';
-import type { Workspace } from '@/types/workspace';
 import { queryClient, render, screen } from '@/utils/testUtils';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
@@ -68,8 +67,8 @@ const mockWorkspace: Workspace = {
   id: '1',
   name: 'Test Workspace',
   slug: 'test-workspace',
-  members: [],
-  applications: [mockApplication],
+  workspaceMembers: [],
+  projects: [mockApplication],
 };
 
 const server = setupServer(

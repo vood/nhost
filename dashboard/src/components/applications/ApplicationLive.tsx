@@ -3,7 +3,7 @@ import RetryableErrorBoundary from '@/components/common/RetryableErrorBoundary';
 import Container from '@/components/layout/Container';
 import OverviewDeployments from '@/components/overview/OverviewDeployments';
 import OverviewDocumentation from '@/components/overview/OverviewDocumentation';
-import OverviewMetrics from '@/components/overview/OverviewMetrics/OverviewMetrics';
+import OverviewMetrics from '@/components/overview/OverviewMetrics';
 import OverviewProjectInfo from '@/components/overview/OverviewProjectInfo';
 import OverviewRepository from '@/components/overview/OverviewRepository';
 import OverviewTopBar from '@/components/overview/OverviewTopBar';
