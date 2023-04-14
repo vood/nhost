@@ -1,6 +1,6 @@
 import useGitHubModal from '@/components/applications/github/useGitHubModal';
 import { useDialog } from '@/components/common/DialogProvider';
-import GithubIcon from '@/components/icons/GithubIcon';
+import { GitHubIcon } from '@/components/common/GitHubIcon';
 import Container from '@/components/layout/Container';
 import BaseDirectorySettings from '@/components/settings/git/BaseDirectorySettings';
 import DeploymentBranchSettings from '@/components/settings/git/DeploymentBranchSettings';
@@ -42,7 +42,7 @@ export default function SettingsGitPage() {
           <Button
             onClick={openGitHubModal}
             className="col-span-5 grid grid-flow-col gap-1.5 xs:col-span-3 lg:col-span-2"
-            startIcon={<GithubIcon className="h-4 w-4 self-center" />}
+            startIcon={<GitHubIcon className="h-4 w-4 self-center" />}
             disabled={maintenanceActive}
           >
             Connect to GitHub
@@ -50,7 +50,7 @@ export default function SettingsGitPage() {
         ) : (
           <Box className="col-span-5 flex flex-row place-content-between items-center rounded-lg border px-4 py-4">
             <div className="ml-2 flex flex-row">
-              <GithubIcon className="mr-1.5 h-7 w-7 self-center" />
+              <GitHubIcon className="mr-1.5 h-7 w-7 self-center" />
               <Text className="self-center font-normal">
                 {currentProject.githubRepository.fullName}
               </Text>

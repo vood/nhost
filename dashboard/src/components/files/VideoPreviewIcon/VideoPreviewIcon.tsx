@@ -1,6 +1,6 @@
 import type { HTMLProps } from 'react';
 
-export default function VideoPreview(
+export default function VideoPreviewIcon(
   props: Omit<HTMLProps<SVGSVGElement>, 'crossOrigin'>,
 ) {
   return (

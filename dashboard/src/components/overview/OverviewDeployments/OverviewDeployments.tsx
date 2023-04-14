@@ -1,6 +1,6 @@
 import useGitHubModal from '@/components/applications/github/useGitHubModal';
+import { GitHubIcon } from '@/components/common/GitHubIcon';
 import DeploymentListItem from '@/components/deployments/DeploymentListItem';
-import GithubIcon from '@/components/icons/GithubIcon';
 import { useUI } from '@/context/UIContext';
 import { useCurrentWorkspaceAndProject } from '@/hooks/v2/useCurrentWorkspaceAndProject';
 import ActivityIndicator from '@/ui/v2/ActivityIndicator';
@@ -97,7 +97,7 @@ function OverviewDeploymentList() {
             className="ml-2 grid grid-flow-col gap-1.5"
             sx={{ backgroundColor: 'transparent' }}
           >
-            <GithubIcon className="h-4 w-4 self-center" />
+            <GitHubIcon className="h-4 w-4 self-center" />
             <Text variant="body1" className="self-center font-normal">
               {currentProject?.githubRepository?.fullName}
             </Text>
@@ -187,7 +187,7 @@ export default function OverviewDeployments() {
             onClick={openGitHubModal}
             disabled={maintenanceActive}
           >
-            <GithubIcon className="mr-1.5 h-4 w-4 self-center" />
+            <GitHubIcon className="mr-1.5 h-4 w-4 self-center" />
             Connect to GitHub
           </Button>
         </div>

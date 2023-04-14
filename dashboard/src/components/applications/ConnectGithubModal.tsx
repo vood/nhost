@@ -1,8 +1,8 @@
 import { CheckGithubConfiguration } from '@/components/applications/github/CheckGithubConfiguration';
 import { EditRepositorySettings } from '@/components/applications/github/EditRepositorySettings';
 import GitHubInstallNhostApplication from '@/components/applications/github/GitHubInstallNhostApplication';
+import { GitHubIcon } from '@/components/common/GitHubIcon';
 import RetryableErrorBoundary from '@/components/common/RetryableErrorBoundary';
-import GithubIcon from '@/components/icons/GithubIcon';
 import { useGetGithubRepositoriesQuery } from '@/generated/graphql';
 import { Avatar } from '@/ui/Avatar';
 import ActivityIndicator from '@/ui/v2/ActivityIndicator';
@@ -113,7 +113,7 @@ export default function ConnectGithubModal({ close }: ConnectGithubModalProps) {
       <div className="flex flex-col">
         <div className="mx-auto text-center">
           <div className="mx-auto h-8 w-8">
-            <GithubIcon className="h-8 w-8 " />
+            <GitHubIcon className="h-8 w-8" />
           </div>
         </div>
         {noRepositoriesAdded ? (

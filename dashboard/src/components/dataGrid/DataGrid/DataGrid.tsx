@@ -1,10 +1,6 @@
 import DataBrowserEmptyState from '@/components/dataBrowser/DataBrowserEmptyState';
 import { DataGridBody } from '@/components/dataGrid/DataGridBody';
-import type { UseDataGridOptions } from '@/components/dataGrid/DataGridContext';
-import {
-  DataGridProvider,
-  useDataGrid,
-} from '@/components/dataGrid/DataGridContext';
+import { DataGridProvider } from '@/components/dataGrid/DataGridContext';
 import { DataGridFrame } from '@/components/dataGrid/DataGridFrame';
 import type { DataGridHeaderProps } from '@/components/dataGrid/DataGridHeader';
 import { DataGridHeader } from '@/components/dataGrid/DataGridHeader';
@@ -16,6 +12,8 @@ import { forwardRef, useEffect, useRef } from 'react';
 import mergeRefs from 'react-merge-refs';
 import type { Column, Row, SortingRule, TableOptions } from 'react-table';
 import { twMerge } from 'tailwind-merge';
+import type { UseDataGridOptions } from './useDataGrid';
+import useDataGrid from './useDataGrid';
 
 export interface DataGridProps<TColumnData extends object>
   extends Omit<UseDataGridOptions<TColumnData>, 'tableRef'> {

@@ -7,7 +7,7 @@ export interface FileIconProps
   error?: boolean;
 }
 
-export function FileIcon({ error, ...props }: FileIconProps) {
+export default function FileIcon({ error, ...props }: FileIconProps) {
   return (
     <svg
       width="16"

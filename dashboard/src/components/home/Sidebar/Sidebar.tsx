@@ -1,7 +1,7 @@
 import { useDialog } from '@/components/common/DialogProvider';
+import { GitHubIcon } from '@/components/common/GitHubIcon';
 import { EditWorkspaceNameForm } from '@/components/home/EditWorkspaceNameForm';
 import { Resource } from '@/components/home/Resource';
-import GithubIcon from '@/components/icons/GithubIcon';
 import type { Workspace } from '@/types/application';
 import ActivityIndicator from '@/ui/v2/ActivityIndicator';
 import type { BoxProps } from '@/ui/v2/Box';
@@ -131,7 +131,7 @@ export default function Sidebar({
             className="grid grid-flow-col gap-1"
             variant="outlined"
             color="secondary"
-            startIcon={<GithubIcon />}
+            startIcon={<GitHubIcon />}
           >
             Star us on GitHub
           </Button>

@@ -1,7 +1,7 @@
 import type { EditRepositorySettingsFormData } from '@/components/applications/github/EditRepositorySettings';
 import { useDialog } from '@/components/common/DialogProvider';
 import ErrorBoundaryFallback from '@/components/common/ErrorBoundaryFallback';
-import GithubIcon from '@/components/icons/GithubIcon';
+import { GitHubIcon } from '@/components/common/GitHubIcon';
 import { useUpdateApplicationMutation } from '@/generated/graphql';
 import { useCurrentWorkspaceAndProject } from '@/hooks/v2/useCurrentWorkspaceAndProject';
 import Button from '@/ui/v2/Button';
@@ -79,7 +79,7 @@ export function EditRepositorySettingsModal({
     <div className="px-1">
       <div className="flex flex-col">
         <div className="mx-auto h-8 w-8">
-          <GithubIcon className="h-8 w-8" />
+          <GitHubIcon className="h-8 w-8" />
         </div>
         <Text className="mt-1.5 text-center text-lg font-medium">
           {selectedRepoId

@@ -1,4 +1,4 @@
-import GithubIcon from '@/components/icons/GithubIcon';
+import { GitHubIcon } from '@/components/common/GitHubIcon';
 import Button from '@/ui/v2/Button';
 import ArrowSquareOutIcon from '@/ui/v2/icons/ArrowSquareOutIcon';
 import Text from '@/ui/v2/Text';
@@ -6,7 +6,7 @@ import Text from '@/ui/v2/Text';
 export default function GitHubInstallNhostApplication() {
   return (
     <div className="grid grid-flow-row justify-center gap-2 p-0.5">
-      <GithubIcon className="mx-auto h-8 w-8" />
+      <GitHubIcon className="mx-auto h-8 w-8" />
 
       <div className="text-center">
         <Text variant="h3" component="h2">

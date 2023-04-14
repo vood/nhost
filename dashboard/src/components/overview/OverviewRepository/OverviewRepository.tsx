@@ -1,4 +1,4 @@
-import GithubIcon from '@/components/icons/GithubIcon';
+import { GitHubIcon } from '@/components/common/GitHubIcon';
 import { useUI } from '@/context/UIContext';
 import { useCurrentWorkspaceAndProject } from '@/hooks/v2/useCurrentWorkspaceAndProject';
 import Box from '@/ui/v2/Box';
@@ -28,7 +28,7 @@ export default function OverviewRepository() {
               variant="outlined"
               color="secondary"
               className="w-full border-1 hover:border-1"
-              startIcon={<GithubIcon />}
+              startIcon={<GitHubIcon />}
               disabled={maintenanceActive}
             >
               Connect to GitHub
@@ -44,7 +44,7 @@ export default function OverviewRepository() {
             className="ml-2 grid grid-flow-col gap-1.5"
             sx={{ backgroundColor: 'transparent' }}
           >
-            <GithubIcon className="h-4 w-4 self-center" />
+            <GitHubIcon className="h-4 w-4 self-center" />
             <Text variant="body1" className="self-center font-normal">
               {currentProject.githubRepository.fullName}
             </Text>

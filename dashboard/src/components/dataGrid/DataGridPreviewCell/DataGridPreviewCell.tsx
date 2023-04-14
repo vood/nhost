@@ -1,7 +1,7 @@
-import AudioPreview from '@/components/icons/AudioPreview';
-import { FileIcon } from '@/components/icons/FileIcon';
-import PDFPreview from '@/components/icons/PDFPreview';
-import VideoPreview from '@/components/icons/VideoPreview';
+import { AudioPreviewIcon } from '@/components/files/AudioPreviewIcon';
+import { FileIcon } from '@/components/files/FileIcon';
+import { PDFPreviewIcon } from '@/components/files/PDFPreviewIcon';
+import { VideoPreviewIcon } from '@/components/files/VideoPreviewIcon';
 import { useAppClient } from '@/hooks/useAppClient';
 import { useCurrentWorkspaceAndProject } from '@/hooks/v2/useCurrentWorkspaceAndProject';
 import { Modal } from '@/ui/Modal';
@@ -390,12 +390,12 @@ export default function DataGridPreviewCell<TData extends object>({
             aria-label={alt}
             className="grid h-full w-full items-center justify-center self-center"
           >
-            {isVideo && <VideoPreview className="h-5 w-5" />}
+            {isVideo && <VideoPreviewIcon className="h-5 w-5" />}
 
-            {isAudio && <AudioPreview className="h-5 w-5" />}
+            {isAudio && <AudioPreviewIcon className="h-5 w-5" />}
 
             {mimeType === 'application/pdf' && (
-              <PDFPreview className="h-5 w-5" />
+              <PDFPreviewIcon className="h-5 w-5" />
             )}
 
             {!isVideo &&

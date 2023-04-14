@@ -1,5 +1,5 @@
+import { GitHubIcon } from '@/components/common/GitHubIcon';
 import NavLink from '@/components/common/NavLink';
-import GithubIcon from '@/components/icons/GithubIcon';
 import UnauthenticatedLayout from '@/components/layout/UnauthenticatedLayout';
 import Box from '@/ui/v2/Box';
 import Button from '@/ui/v2/Button';
@@ -27,7 +27,7 @@ export default function SignUpPage() {
       <Box className="grid grid-flow-row gap-4 rounded-md border bg-transparent p-6 lg:p-12">
         <Button
           className="!bg-white !text-black hover:ring-2 hover:ring-white hover:ring-opacity-50 disabled:!text-black disabled:!text-opacity-60"
-          startIcon={<GithubIcon />}
+          startIcon={<GitHubIcon />}
           size="large"
           disabled={loading}
           loading={loading}
