@@ -1,10 +1,8 @@
 import type { UseDataGridReturn } from '@/hooks/useDataGrid';
 import type { PropsWithChildren } from 'react';
-import { createContext } from 'react';
+import DataGridContext from './DataGridContext';
 
-export const DataGridContext = createContext<Partial<UseDataGridReturn>>(null);
-
-export function DataGridProvider<T extends object = {}>({
+export default function DataGridProvider<T extends object = {}>({
   children,
   ...value
 }: PropsWithChildren<UseDataGridReturn<T>>) {

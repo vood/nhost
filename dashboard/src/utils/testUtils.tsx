@@ -1,7 +1,7 @@
 /* eslint-disable no-restricted-imports */
 import { DialogProvider } from '@/components/common/DialogProvider';
 import RetryableErrorBoundary from '@/components/common/RetryableErrorBoundary';
-import { ManagedUIContext } from '@/context/UIContext';
+import { UIProvider } from '@/context/UIContext';
 import createTheme from '@/ui/v2/createTheme';
 import { createHttpLink } from '@apollo/client';
 import { CacheProvider } from '@emotion/react';
@@ -109,12 +109,12 @@ function Providers({ children }: PropsWithChildren<{}>) {
                   }),
                 ]}
               >
-                <ManagedUIContext>
+                <UIProvider>
                   <Toaster position="bottom-center" />
                   <ThemeProvider theme={theme}>
                     <DialogProvider>{children}</DialogProvider>
                   </ThemeProvider>
-                </ManagedUIContext>
+                </UIProvider>
               </NhostApolloProvider>
             </NhostProvider>
           </CacheProvider>

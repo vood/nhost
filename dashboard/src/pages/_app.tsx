@@ -1,6 +1,6 @@
 import { DialogProvider } from '@/components/common/DialogProvider';
 import ErrorBoundaryFallback from '@/components/common/ErrorBoundaryFallback';
-import { ManagedUIContext } from '@/context/UIContext';
+import { UIProvider } from '@/context/UIContext';
 import useIsPlatform from '@/hooks/common/useIsPlatform';
 import '@/styles/fonts.css';
 import '@/styles/globals.css';
@@ -92,7 +92,7 @@ function MyApp({
               nhost={nhost}
               connectToDevTools={process.env.NEXT_PUBLIC_ENV === 'dev'}
             >
-              <ManagedUIContext>
+              <UIProvider>
                 <Toaster position="bottom-center" />
 
                 {isPlatform && (
@@ -109,7 +109,7 @@ function MyApp({
                     {getLayout(<Component {...pageProps} />)}
                   </DialogProvider>
                 </ThemeProvider>
-              </ManagedUIContext>
+              </UIProvider>
             </NhostApolloProvider>
           </NhostProvider>
         </CacheProvider>

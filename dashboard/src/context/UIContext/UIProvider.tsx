@@ -1,26 +1,10 @@
 import { useRouter } from 'next/router';
 import type { PropsWithChildren } from 'react';
-import { createContext, useContext, useMemo } from 'react';
+import { useMemo } from 'react';
+import type { UIContextState } from './UIContext';
+import UIContext from './UIContext';
 
-export interface UIContextState {
-  /**
-   * Determines whether or not the dashboard is in maintenance mode.
-   */
-  maintenanceActive: boolean;
-  /**
-   * The date and time when maintenance mode will end.
-   */
-  maintenanceEndDate: Date;
-}
-
-export const UIContext = createContext<UIContextState>({
-  maintenanceActive: false,
-  maintenanceEndDate: null,
-});
-
-UIContext.displayName = 'UIContext';
-
-export function UIProvider(props: PropsWithChildren<unknown>) {
+export default function UIProvider(props: PropsWithChildren<unknown>) {
   const router = useRouter();
 
   const maintenanceUnlocked =
@@ -43,16 +27,4 @@ export function UIProvider(props: PropsWithChildren<unknown>) {
   );
 
   return <UIContext.Provider value={value} {...props} />;
-}
-
-export const useUI = () => {
-  const context = useContext(UIContext);
-  if (context === undefined) {
-    throw new Error('useUI must be used within a UIProvider');
-  }
-  return context;
-};
-
-export function ManagedUIContext({ children }: PropsWithChildren<unknown>) {
-  return <UIProvider>{children}</UIProvider>;
 }
