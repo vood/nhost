@@ -1,7 +1,7 @@
 import { LoadingScreen } from '@/components/common/LoadingScreen';
 import { RetryableErrorBoundary } from '@/components/common/RetryableErrorBoundary';
-import DataBrowserGrid from '@/components/dataBrowser/DataBrowserGrid';
-import DataBrowserLayout from '@/components/dataBrowser/DataBrowserLayout';
+import DataBrowserGrid from '@/features/database/components/DataBrowserGrid';
+import DataBrowserLayout from '@/features/database/components/DataBrowserLayout';
 import useIsPlatform from '@/hooks/common/useIsPlatform';
 import useTablePath from '@/hooks/useTablePath';
 import { useCurrentWorkspaceAndProject } from '@/hooks/v2/useCurrentWorkspaceAndProject';

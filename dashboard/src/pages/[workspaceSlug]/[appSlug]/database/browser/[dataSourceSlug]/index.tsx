@@ -1,6 +1,6 @@
 import InlineCode from '@/components/common/InlineCode';
-import DataBrowserEmptyState from '@/components/dataBrowser/DataBrowserEmptyState';
-import DataBrowserLayout from '@/components/dataBrowser/DataBrowserLayout';
+import DataBrowserEmptyState from '@/features/database/components/DataBrowserEmptyState';
+import DataBrowserLayout from '@/features/database/components/DataBrowserLayout';
 import { useRouter } from 'next/router';
 import type { ReactElement } from 'react';
 

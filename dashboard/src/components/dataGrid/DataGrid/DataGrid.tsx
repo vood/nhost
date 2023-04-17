@@ -1,9 +1,9 @@
-import DataBrowserEmptyState from '@/components/dataBrowser/DataBrowserEmptyState';
 import { DataGridBody } from '@/components/dataGrid/DataGridBody';
 import { DataGridProvider } from '@/components/dataGrid/DataGridContext';
 import { DataGridFrame } from '@/components/dataGrid/DataGridFrame';
 import type { DataGridHeaderProps } from '@/components/dataGrid/DataGridHeader';
 import { DataGridHeader } from '@/components/dataGrid/DataGridHeader';
+import DataBrowserEmptyState from '@/features/database/components/DataBrowserEmptyState';
 import type { DataBrowserGridColumn } from '@/types/dataBrowser';
 import ActivityIndicator from '@/ui/v2/ActivityIndicator';
 import Box from '@/ui/v2/Box';

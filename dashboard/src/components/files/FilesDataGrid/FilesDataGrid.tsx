@@ -5,7 +5,7 @@ import { DataGridDateCell } from '@/components/dataGrid/DataGridDateCell';
 import type { PreviewProps } from '@/components/dataGrid/DataGridPreviewCell';
 import { DataGridPreviewCell } from '@/components/dataGrid/DataGridPreviewCell';
 import { DataGridTextCell } from '@/components/dataGrid/DataGridTextCell';
-import { FileIcon } from '@/components/files/FileIcon/FileIcon';
+import { FileIcon } from '@/components/files/FileIcon';
 import FilesDataGridControls from '@/components/files/FilesDataGridControls';
 import { useAppClient } from '@/hooks/useAppClient';
 import useBuckets from '@/hooks/useBuckets';
