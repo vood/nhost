@@ -1,10 +1,10 @@
+import { queryClient, render, screen } from '@/tests/testUtils';
 import type { Project, Workspace } from '@/types/application';
 import { ApplicationStatus } from '@/types/application';
-import { queryClient, render, screen } from '@/utils/testUtils';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
 import { afterAll, beforeAll, vi } from 'vitest';
-import OverviewDeployments from '.';
+import OverviewDeployments from './OverviewDeployments';
 
 vi.mock('next/router', () => ({
   useRouter: vi.fn().mockReturnValue({
