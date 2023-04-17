@@ -1,4 +1,4 @@
-import RetryableErrorBoundary from '@/components/common/RetryableErrorBoundary';
+import { RetryableErrorBoundary } from '@/components/common/RetryableErrorBoundary';
 import {
   useGetAppFunctionsMetadataQuery,
   useGetProjectMetricsQuery,

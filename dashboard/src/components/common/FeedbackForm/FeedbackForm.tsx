@@ -1,5 +1,5 @@
-import { FeedbackReceived } from '@/components/home/FeedbackReceived';
-import { SendFeedback } from '@/components/home/SendFeedback';
+import { FeedbackReceived } from '@/components/common/FeedbackForm/FeedbackReceived';
+import { SendFeedback } from '@/components/common/FeedbackForm/SendFeedback';
 import type { DetailedHTMLProps, HTMLProps } from 'react';
 import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';

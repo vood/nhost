@@ -2,7 +2,7 @@ import { CheckGithubConfiguration } from '@/components/applications/github/Check
 import { EditRepositorySettings } from '@/components/applications/github/EditRepositorySettings';
 import GitHubInstallNhostApplication from '@/components/applications/github/GitHubInstallNhostApplication';
 import { GitHubIcon } from '@/components/common/GitHubIcon';
-import RetryableErrorBoundary from '@/components/common/RetryableErrorBoundary';
+import { RetryableErrorBoundary } from '@/components/common/RetryableErrorBoundary';
 import { useGetGithubRepositoriesQuery } from '@/generated/graphql';
 import { Avatar } from '@/ui/Avatar';
 import ActivityIndicator from '@/ui/v2/ActivityIndicator';

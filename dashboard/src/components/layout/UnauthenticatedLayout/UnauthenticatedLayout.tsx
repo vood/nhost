@@ -1,5 +1,5 @@
 import { LoadingScreen } from '@/components/common/LoadingScreen';
-import RetryableErrorBoundary from '@/components/common/RetryableErrorBoundary';
+import { RetryableErrorBoundary } from '@/components/common/RetryableErrorBoundary';
 import type { BaseLayoutProps } from '@/components/layout/BaseLayout';
 import BaseLayout from '@/components/layout/BaseLayout';
 import Container from '@/components/layout/Container';

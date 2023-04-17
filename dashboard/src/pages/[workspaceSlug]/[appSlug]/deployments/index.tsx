@@ -1,5 +1,5 @@
 import AppDeployments from '@/components/applications/AppDeployments';
-import RetryableErrorBoundary from '@/components/common/RetryableErrorBoundary';
+import { RetryableErrorBoundary } from '@/components/common/RetryableErrorBoundary';
 import Container from '@/components/layout/Container';
 import ProjectLayout from '@/components/layout/ProjectLayout';
 import { useUI } from '@/context/UIContext';

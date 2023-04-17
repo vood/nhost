@@ -1,7 +1,7 @@
 import type { EditRepositorySettingsFormData } from '@/components/applications/github/EditRepositorySettings';
 import { useDialog } from '@/components/common/DialogProvider';
-import ErrorBoundaryFallback from '@/components/common/ErrorBoundaryFallback';
 import { GitHubIcon } from '@/components/common/GitHubIcon';
+import { RetryableErrorBoundary } from '@/components/common/RetryableErrorBoundary';
 import { useUpdateApplicationMutation } from '@/generated/graphql';
 import { useCurrentWorkspaceAndProject } from '@/hooks/v2/useCurrentWorkspaceAndProject';
 import Button from '@/ui/v2/Button';
@@ -10,7 +10,6 @@ import { discordAnnounce } from '@/utils/discordAnnounce';
 import { triggerToast } from '@/utils/toast';
 import { updateOwnCache } from '@/utils/updateOwnCache';
 import { useApolloClient } from '@apollo/client';
-import { ErrorBoundary } from 'react-error-boundary';
 import { useFormContext } from 'react-hook-form';
 import { RepoAndBranch } from './RepoAndBranch';
 
@@ -91,7 +90,7 @@ export function EditRepositorySettingsModal({
           deployment branch.
         </Text>
         <div>
-          <ErrorBoundary fallbackRender={ErrorBoundaryFallback}>
+          <RetryableErrorBoundary>
             <form
               onSubmit={handleSubmit(handleEditGitHubIntegration)}
               autoComplete="off"
@@ -122,7 +121,7 @@ export function EditRepositorySettingsModal({
                 Select another repository
               </Button>
             </div>
-          </ErrorBoundary>
+          </RetryableErrorBoundary>
         </div>
       </div>
     </div>

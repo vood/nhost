@@ -1,6 +1,6 @@
 /* eslint-disable no-restricted-imports */
 import { DialogProvider } from '@/components/common/DialogProvider';
-import RetryableErrorBoundary from '@/components/common/RetryableErrorBoundary';
+import { RetryableErrorBoundary } from '@/components/common/RetryableErrorBoundary';
 import { UIProvider } from '@/context/UIContext';
 import createTheme from '@/ui/v2/createTheme';
 import { createHttpLink } from '@apollo/client';

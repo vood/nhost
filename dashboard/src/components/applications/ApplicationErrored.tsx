@@ -1,4 +1,4 @@
-import FeedbackForm from '@/components/common/FeedbackForm';
+import { FeedbackForm } from '@/components/common/FeedbackForm';
 import Container from '@/components/layout/Container';
 import { useAppCreatedAt } from '@/hooks/useAppCreatedAt';
 import { useCurrentDate } from '@/hooks/useCurrentDate';

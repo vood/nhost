@@ -1,5 +1,5 @@
 import Breadcrumbs from '@/components/common/Breadcrumbs';
-import FeedbackForm from '@/components/common/FeedbackForm';
+import { FeedbackForm } from '@/components/common/FeedbackForm';
 import LocalAccountMenu from '@/components/common/LocalAccountMenu';
 import Logo from '@/components/common/Logo';
 import MobileNav from '@/components/common/MobileNav';

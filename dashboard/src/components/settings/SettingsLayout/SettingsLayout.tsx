@@ -1,4 +1,4 @@
-import RetryableErrorBoundary from '@/components/common/RetryableErrorBoundary';
+import { RetryableErrorBoundary } from '@/components/common/RetryableErrorBoundary';
 import type { ProjectLayoutProps } from '@/components/layout/ProjectLayout';
 import ProjectLayout from '@/components/layout/ProjectLayout';
 import type { SettingsSidebarProps } from '@/components/settings/SettingsSidebar';

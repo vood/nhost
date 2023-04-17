@@ -1,4 +1,4 @@
-import FeedbackForm from '@/components/common/FeedbackForm';
+import { FeedbackForm } from '@/components/common/FeedbackForm';
 import Container from '@/components/layout/Container';
 import { useCurrentWorkspaceAndProject } from '@/hooks/v2/useCurrentWorkspaceAndProject';
 import { Modal } from '@/ui/Modal';

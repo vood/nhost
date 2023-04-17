@@ -1,5 +1,5 @@
 import { DialogProvider } from '@/components/common/DialogProvider';
-import ErrorBoundaryFallback from '@/components/common/ErrorBoundaryFallback';
+import { RetryableErrorBoundary } from '@/components/common/RetryableErrorBoundary';
 import { UIProvider } from '@/context/UIContext';
 import useIsPlatform from '@/hooks/common/useIsPlatform';
 import '@/styles/fonts.css';
@@ -29,7 +29,6 @@ import { useRouter } from 'next/router';
 import Script from 'next/script';
 import type { ReactElement } from 'react';
 import { useEffect } from 'react';
-import { ErrorBoundary } from 'react-error-boundary';
 import { Toaster } from 'react-hot-toast';
 
 // Client-side cache, shared for the whole session of the user in the browser.
@@ -81,7 +80,7 @@ function MyApp({
   const getLayout = Component.getLayout ?? ((page: ReactElement) => page);
 
   return (
-    <ErrorBoundary fallbackRender={ErrorBoundaryFallback}>
+    <RetryableErrorBoundary>
       <DefaultSeo titleTemplate="%s - Nhost" defaultTitle="Nhost" />
 
       <QueryClientProvider client={queryClient}>
@@ -114,7 +113,7 @@ function MyApp({
           </NhostProvider>
         </CacheProvider>
       </QueryClientProvider>
-    </ErrorBoundary>
+    </RetryableErrorBoundary>
   );
 }
 export default MyApp;

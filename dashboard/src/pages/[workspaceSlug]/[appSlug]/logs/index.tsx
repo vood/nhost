@@ -1,4 +1,4 @@
-import RetryableErrorBoundary from '@/components/common/RetryableErrorBoundary';
+import { RetryableErrorBoundary } from '@/components/common/RetryableErrorBoundary';
 import ProjectLayout from '@/components/layout/ProjectLayout';
 import LogsBody from '@/components/logs/LogsBody';
 import LogsHeader from '@/components/logs/LogsHeader';

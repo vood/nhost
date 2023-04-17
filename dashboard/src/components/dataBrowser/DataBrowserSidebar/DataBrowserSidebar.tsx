@@ -2,7 +2,7 @@ import { useDialog } from '@/components/common/DialogProvider';
 import FormActivityIndicator from '@/components/common/FormActivityIndicator';
 import InlineCode from '@/components/common/InlineCode';
 import NavLink from '@/components/common/NavLink';
-import RetryableErrorBoundary from '@/components/common/RetryableErrorBoundary';
+import { RetryableErrorBoundary } from '@/components/common/RetryableErrorBoundary';
 import useIsPlatform from '@/hooks/common/useIsPlatform';
 import useDatabaseQuery from '@/hooks/dataBrowser/useDatabaseQuery';
 import useDeleteTableWithToastMutation from '@/hooks/dataBrowser/useDeleteTableMutation/useDeleteTableWithToastMutation';

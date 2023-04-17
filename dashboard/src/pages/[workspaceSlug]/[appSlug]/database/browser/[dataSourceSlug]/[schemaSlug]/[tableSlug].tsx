@@ -1,5 +1,5 @@
 import { LoadingScreen } from '@/components/common/LoadingScreen';
-import RetryableErrorBoundary from '@/components/common/RetryableErrorBoundary';
+import { RetryableErrorBoundary } from '@/components/common/RetryableErrorBoundary';
 import DataBrowserGrid from '@/components/dataBrowser/DataBrowserGrid';
 import DataBrowserLayout from '@/components/dataBrowser/DataBrowserLayout';
 import useIsPlatform from '@/hooks/common/useIsPlatform';

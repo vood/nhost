@@ -1,6 +1,6 @@
 import { RestoreBackupModal } from '@/components/applications/RestoreBackupModal';
 import { UnlockFeatureByUpgrading } from '@/components/applications/UnlockFeatureByUpgrading';
-import RetryableErrorBoundary from '@/components/common/RetryableErrorBoundary';
+import { RetryableErrorBoundary } from '@/components/common/RetryableErrorBoundary';
 import Container from '@/components/layout/Container';
 import ProjectLayout from '@/components/layout/ProjectLayout';
 import { useGetApplicationBackupsQuery } from '@/generated/graphql';

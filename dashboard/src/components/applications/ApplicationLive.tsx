@@ -1,5 +1,5 @@
 import MaintenanceAlert from '@/components/common/MaintenanceAlert';
-import RetryableErrorBoundary from '@/components/common/RetryableErrorBoundary';
+import { RetryableErrorBoundary } from '@/components/common/RetryableErrorBoundary';
 import Container from '@/components/layout/Container';
 import OverviewDeployments from '@/components/overview/OverviewDeployments';
 import OverviewDocumentation from '@/components/overview/OverviewDocumentation';
