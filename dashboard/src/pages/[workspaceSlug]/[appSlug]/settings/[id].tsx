@@ -66,7 +66,11 @@ export function getStaticPaths() {
 
   return {
     paths: mainConfig?.fields.map(({ name }) => ({
-      params: { workspaceSlug: '', appSlug: '', id: name },
+      params: {
+        workspaceSlug: '[workspaceSlug]',
+        appSlug: '[appSlug]',
+        id: name,
+      },
     })),
     fallback: true,
   };
