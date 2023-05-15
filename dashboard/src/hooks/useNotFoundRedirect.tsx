@@ -10,6 +10,7 @@ export default function useNotFoundRedirect() {
   const {
     query: { workspaceSlug, appSlug, updating },
     isReady,
+    isFallback,
   } = router;
 
   const { currentProject, currentWorkspace, loading } =
@@ -21,6 +22,8 @@ export default function useNotFoundRedirect() {
       updating ||
       // If the router is not ready, we don't want to redirect to 404
       !isReady ||
+      // If we're in fallback mode, we don't want to redirect to 404
+      isFallback ||
       // If the current workspace and project are not loaded, we don't want to redirect to 404
       loading ||
       // If we're already on the 404 page, we don't want to redirect to 404
@@ -38,6 +41,7 @@ export default function useNotFoundRedirect() {
     currentProject,
     currentWorkspace,
     isReady,
+    isFallback,
     loading,
     appSlug,
     router,
