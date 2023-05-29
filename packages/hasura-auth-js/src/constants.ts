@@ -10,4 +10,4 @@ export const MIN_PASSWORD_LENGTH = 3
  */
 export const TOKEN_REFRESH_MARGIN = 300 // five minutes
 
-export const REFRESH_TOKEN_MAX_ATTEMPTS = 5
+export const REFRESH_TOKEN_MAX_ATTEMPTS = 1
